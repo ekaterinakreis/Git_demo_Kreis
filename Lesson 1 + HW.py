@@ -80,7 +80,6 @@
 # print(f'Result of multiple is: {multiple}')
 # print('Result of multiple is: {}'.format(multiple))
 
-
 #Напишите программу, чтобы вывести:
 
 #*********

@@ -45,7 +45,7 @@
 # fun()
 # print(s)
 
-#  GLOBAL
+'''GLOBAL'''
 
 # age = 17
 #

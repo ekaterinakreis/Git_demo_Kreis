@@ -1,3 +1,4 @@
+# '''STRINGS'''
 # s = 'hello world'
 # print(s.replace(' ', ''))
 

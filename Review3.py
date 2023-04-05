@@ -50,7 +50,14 @@
 #
 # say('Denis', 'Denisov')
 
-class Cat:
-    bread = 'Siamese'
-    color = 'black'
-    age = 4
+# class Cat:
+#     bread = 'Siamese'
+#     color = 'black'
+#     age = 4
+
+import random
+class Ghost(object):
+    def __init__(self):
+        self.color = random.choice{("white", "yellow", "purple", "red")}
+ghost = Ghost()
+print(ghost.color)

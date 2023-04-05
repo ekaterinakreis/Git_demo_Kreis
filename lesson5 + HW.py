@@ -57,7 +57,6 @@ dog3 = Pitbull('Lassie', 8, 'black', 'type1')
 # print(dog3.passport)
 # print(dog3.get_name())
 # print(dog3.give_a_paw())
-#
 # print(dog3.run())
 
 

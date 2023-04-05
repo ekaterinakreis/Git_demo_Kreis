@@ -299,5 +299,5 @@ elif age > 18:
 
 
 age = int(input('Введите ваш возраст: '))
-def describe_age(a):
-    return f"You\'re a(n) {a<7 and'Приходите потом'or a<18 and ''or a<65and'adult'or'elderly'}"
+# def describe_age(a):
+#     return f"You\'re a(n) {a<7 and'Приходите потом'or a<18 and ''or a<65and'adult'or'elderly'}"

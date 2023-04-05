@@ -13,7 +13,7 @@ def div_it(x, y):
         try:
             return x / 0
         except:
-            return  "Can't divide by zero! Try again)"
+            return "Can't divide by zero! Try again)"
 
 def pow_it(x, y):
     return x ** y

@@ -168,12 +168,12 @@
 #    - получите сумму всех чисел,
 #    - распечатайте все строки, где есть буква 'a'
 #
-list_1 = ['Hi', 'ananas', 2, None, 75, 'pizza', 36, 100]
-new_list = []
-for i in list_1:
-    if type(i) == int or type(i) == float:
-        new_list.append(i)
-print(sum(new_list))
+# list_1 = ['Hi', 'ananas', 2, None, 75, 'pizza', 36, 100]
+# new_list = []
+# for i in list_1:
+#     if type(i) == int or type(i) == float:
+#         new_list.append(i)
+# print(sum(new_list))
 #
 # for i in list_1:
 #     if type(i) == str and 'a':
