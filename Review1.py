@@ -199,3 +199,10 @@
 # # items = tuple(dct.items())
 # print(items)
 
+def last(s):
+    s1 = list(s.split(","))
+    new = []
+    for i in s1:
+        new.append(i)
+    print(sorted(new))
+last("man i need a taxi up to ubud")

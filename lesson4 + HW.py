@@ -167,7 +167,7 @@ import time
 #
 # print(square(5))
 # # print(type(square(5)))
-#
+
 # import math as m
 # def square(a):
 #     return a * 4, a**2, round(m.sqrt(2*(a**2)), 2)
@@ -191,8 +191,11 @@ import time
 # def person(**data):
 #    print("Data type of argument: ", type(data))
 #
-#    for key, value in data.items():
+   # for key, value in data.items():
 #       print('{}: {}'.format(key,value))
+
+    # for key in data:
+    #     print(f'{key}')
 #
 # person(name = 'Jhon', last_name = 'Smith', age = 35, position = ' web developer')
 # person(Firstname="John", Lastname="Wood", Country="Wakanda", Age=25, Phone=9876543210)
@@ -203,7 +206,7 @@ import time
 
 # my_list = [20, -3, 15, 2, -1, -21]
 # positive = list(filter(lambda x: x > 0 , my_list))
-# print(positive)
+# print(sorted(positive))
 
 # 4.4. Используя лямбда выражение, получите результат перемножения значений в предыдущем списке
 #
@@ -218,36 +221,43 @@ import time
 import time
 
 
-# def decor():
-#     def counter(arg):
+# def decor(func):
+#     def counter(*args, **kwargs):
+#         start= time.time()
 #         print('The Countdown has started!')
-#         mathimatic(arg)
+#         result = func(*args, **kwargs)
+#         end_time = time.time()
 #         print('Stop the Countdown!')
+#         print(f'The Function {func.__name__} works {end_time - start: 2f} sec')
+#         return result
 #     return counter()
 #
-# def mathimatic(a, b, c):
-#     return (a + b)* c
-#
+# @decor
+# def func_a():
+#     time.
+#     return ('This is Function!')
+
+
 # print(mathimatic(3, 5, 7))
 # print(time.perf_counter())
 
-import time
-
-
-def time_it(func):
-   def wrapper(*args, **kwargs):
-       start = time.time()
-       result = func(*args, **kwargs)
-       end = time.time()
-       print(f"""Time taken by {func.__name__}: {end - start:.2f} seconds""")
-       return result
-   return wrapper
-
-
-@time_it
-def time_func():
-    print ("""TIME""")
-time_func()
+# import time
+#
+#
+# def time_it(func):
+#    def wrapper(*args, **kwargs):
+#        start = time.time()
+#        result = func(*args, **kwargs)
+#        end = time.time()
+#        print(f"""Time taken by {func.__name__}: {end - start:.2f} seconds""")
+#        return result
+#    return wrapper
+#
+#
+# @time_it
+# def time_func():
+#     print ("""TIME""")
+# time_func()
 
 
 
@@ -268,3 +278,26 @@ import my_calc
 # res3 = my_calc.div_it(5, 0)
 # print(res3)
 
+age = int(input('Введите ваш возраст: '))
+
+if age < 7:
+    print('Приходите когда-нибудь потом')
+if age >= 7 and age <= 18:
+    message = input("Не желаете ли сфотографироваться за 3$? да/нет:  ")
+    if message == "да":
+        price =+3
+        print(f"К оплате {price + 10} долларов")
+    else:
+        print(f"К оплате 20 долларов")
+elif age > 18:
+    message = input("Не желаете ли сфотографироваться? да/нет:  ")
+    if message == "да":
+        price =+3
+        print(f"К оплате {price + 20} долларов!")
+    else:
+        print(f"К оплате 10 долларов!")
+
+
+age = int(input('Введите ваш возраст: '))
+def describe_age(a):
+    return f"You\'re a(n) {a<7 and'Приходите потом'or a<18 and ''or a<65and'adult'or'elderly'}"
